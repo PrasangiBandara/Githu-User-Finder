@@ -42,6 +42,23 @@ function findUser() {
         `;
         userResult.innerHTML += repoDetails;
 
+        //last 3 repositories
+        const lastRepos = repos.slice(0, 3).map(repo => `<li>${repo.name}</li>`).join('');
+        const lastRepoDetails = `
+            <h3>Lastly used Repositories of ${user.name}</h3>
+            <ul>${lastRepos}</ul>
+        `;
+        userResult.innerHTML += lastRepoDetails;
+
     })
+
+    //error handling
+    .catch(error => {
+        const errorMessage = `
+            <h2>Error</h2>
+            <p>${error.message}</p>
+        `;
+        userResult.innerHTML = errorMessage;
+    });
 
 }
