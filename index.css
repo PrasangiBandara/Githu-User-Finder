@@ -8,3 +8,33 @@ body {
     text-align: center;
     margin-top: 50px;
   }
+
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+    width: 60%;
+    max-width: 650px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  button {
+    padding: 10px 310px;
+    background-color: #5b8c5a;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    
+    margin-left: 390px;
+    margin-top: 5px;
+    
+  }
+
+  button:hover {
+    background-color: #4a6f4a;
+  }

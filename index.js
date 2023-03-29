@@ -26,10 +26,10 @@ function findUser() {
             <h2>${user.login}</h2>
             <img src="${user.avatar_url}">
             <ul>
-                <li>Name: ${user.name || 'Not Available'}</li>
-                <li>Bio: ${user.bio || 'Not Available'}</li>
-                <li>Followers: ${user.followers}</li>
-                <li>Following: ${user.following}</li>
+                <li><b>Name: </b> ${user.name || 'Not Available'}</li>
+                <li><b>Bio: </b> ${user.bio || 'Not Available'}</li>
+                <li><b>Followers: </b> ${user.followers}</li>
+                <li><b>Following: </b> ${user.following}</li>
             </ul>
         `;
         userResult.innerHTML = details;
@@ -55,8 +55,8 @@ function findUser() {
     //error handling
     .catch(error => {
         const errorMessage = `
-            <h2>Error</h2>
-            <p>${error.message}</p>
+            <br><br><br>
+            <h2>User is not found</h2>
         `;
         userResult.innerHTML = errorMessage;
     });
