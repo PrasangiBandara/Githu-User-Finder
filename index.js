@@ -34,6 +34,14 @@ function findUser() {
         `;
         userResult.innerHTML = details;
 
+        //all repositories
+        const allRepos = repos.map(repo => `<li>${repo.name}</li>`).join('');
+        const repoDetails = `
+            <h3>Exsisting Repositories of ${user.name}</h3>
+            <ul>${allRepos}</ul>
+        `;
+        userResult.innerHTML += repoDetails;
+
     })
 
 }
