@@ -57,6 +57,7 @@ function findUser() {
         const errorMessage = `
             <br><br><br>
             <h2>User is not found</h2>
+            <p>${error.message}</p>
         `;
         userResult.innerHTML = errorMessage;
     });
