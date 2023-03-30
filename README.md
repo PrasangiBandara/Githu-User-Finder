@@ -2,10 +2,9 @@
 Simple Single page application to search github user details using vanilla JavaScript and REST API
 
 
-Using this Single page application, Github user details can be find using his/her user name.
+Using this Single page application, Github user details can be find using his/her user name. Then it shows user details and details about repositories.
 <br>
 1. Searching Bar View<br><br>
-
 ![3](https://user-images.githubusercontent.com/73025102/228526241-bf8b2696-8f69-488e-8e31-0ccef1fb0978.png)
 <br>
 
@@ -23,5 +22,4 @@ Using this Single page application, Github user details can be find using his/he
 
 3. If search a invalid user name it shows error messege of "User is not found".
 <br>
-
 ![4](https://user-images.githubusercontent.com/73025102/228527719-36849bc2-3df8-42d0-9e57-0d1f24395689.png)
